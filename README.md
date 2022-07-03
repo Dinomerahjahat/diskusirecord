@@ -1,6 +1,6 @@
 # FILES SHARING 1 BUTTON
 
-
+![](https://github.com/Rexashh/onebuttonfiles/blob/main/69e039f7ecb37d70c2f7e9b5f41c5c6f.jpg)
 
 
 
@@ -31,10 +31,10 @@ Terutama yang sagapung.
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/Rexashh/File-Sharing-Xa
+git clone https://github.com/Rexashh/onebuttonfiles
 ````
 ````bash
-cd File-Sharing-Xa
+cd onebuttonfiles
 ````
 ````bash
 pip3 install -r requirements.txt
@@ -100,8 +100,5 @@ python3 main.py
 - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
 - Our Support Group Members
 - Thanks to [CodeXBotz](https://github.com/CodeXBotz/File-Sharing-Bot/)
-
-##
-
-   **Star this Repo if you Liked it ⭐⭐⭐**
+- inspiration from : [Files-Sharing-Bot](https://github.com/mrismanaziz/File-Sharing-Man)
 
