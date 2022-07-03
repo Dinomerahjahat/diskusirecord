@@ -33,9 +33,9 @@ class Bot(Client):
                 self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning("Bot can't Export Invite link from Force Sub Channel!")
-                self.LOGGER(__name__).warning(f"Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL}")
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
+                self.LOGGER(__name__).warning("Bot tidak dapat Mengekspor tautan Undangan dari Force Sub Channel!")
+                self.LOGGER(__name__).warning(f"Silakan periksa kembali FORCE_SUB_CHANNEL dan Pastikan Bot adalah Admin di saluran dengan Undang Pengguna melalui Izin Tautan, Nilai Angkatan Sub Channel Saat Ini: {FORCE_SUB_CHANNEL}")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/rexaprivateroom")
                 sys.exit()
         try:
             db_channel = await self.get_chat(CHANNEL_ID)
@@ -44,12 +44,12 @@ class Bot(Client):
             await test.delete()
         except Exception as e:
             self.LOGGER(__name__).warning(e)
-            self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/CodeXBotzSupport for support")
+            self.LOGGER(__name__).warning(f"Pastikan bot adalah Admin di Saluran DB, dan Periksa kembali CHANNEL_ID, Channel Saat Ini {CHANNEL_ID}")
+            self.LOGGER(__name__).info("\nBot Berhenti. Bergabunglah dengan https://t.me/rexaprivateroom")
             sys.exit()
 
         self.set_parse_mode("html")
-        self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by 𝘾𝙤𝙙𝙚 𝕏 𝘽𝙤𝙩𝙯\nhttps://t.me/CodeXBotz")
+        self.LOGGER(__name__).info(f"Menjalankan Bot..!\n\nDibuat oleh Rexashh\nhttps://t.me/JustRex")
         self.username = usr_bot_me.username
 
     async def stop(self, *args):
