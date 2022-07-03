@@ -1,4 +1,5 @@
 #(©)CodeXBotz
+# Indo by @JustRex
 import os
 import asyncio
 from pyrogram import Client, filters, __version__
@@ -13,9 +14,9 @@ from database.sql import add_user, query_msg, full_userbase
 
 #=====================================================================================##
 
-WAIT_MSG = """"<b>Processing ...</b>"""
+WAIT_MSG = """"<b>Memuat...</b>"""
 
-REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
+REPLY_ERROR = """<code>Gunakan perintah ini sebagai balasan untuk pesan telegram apa pun tanpa spasi.</code>"""
 
 #=====================================================================================##
 
@@ -57,11 +58,11 @@ async def start_command(client: Client, message: Message):
                 ids = [int(int(argument[1]) / abs(client.db_channel.id))]
             except:
                 return
-        temp_msg = await message.reply("Please wait...")
+        temp_msg = await message.reply("Mohon tunggu...")
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something went wrong..!")
+            await message.reply_text("Ada yang salah..!")
             return
         await temp_msg.delete()
 
@@ -90,8 +91,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
+                    InlineKeyboardButton("ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ", callback_data = "about"),
+                    InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data = "close")
                 ]
             ]
         )
@@ -114,7 +115,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "↗️ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ",
                 url = client.invitelink)
         ]
     ]
@@ -122,7 +123,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'ᴄᴏʙᴀ ʟᴀɢɪ',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
