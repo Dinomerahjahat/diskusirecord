@@ -1,53 +1,53 @@
 {
-  "name": "TG File Share/Sharing Bot",
-  "description": "file sharing bot store posts and it can access by special links",
+  "name": "Button 1 Files sharing",
+  "description": "berbagi file posting toko bot dan dapat diakses melalui tautan khusus",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
+  "repository": "https://github.com/CodeXBotz/onebuttonfiles",
   "logo": "https://telegra.ph/file/14d3013fda21281c54b61.jpg",
   "env": {
     "TG_BOT_TOKEN": {
-      "description": "Your Bot token, Get it from @Botfather",
+      "description": "Token Bot Anda, Dapatkan dari @Botfather",
       "value": ""
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "1250450587"
+      "value": "17363839"
     },
     "APP_ID":{
-      "description": "your app id, take it from my.telegram.org",
+      "description": "api id aplikasi Anda, ambil dari my.telegram.org",
       "value": ""
     },
     "API_HASH":{
-      "description": "your api hash, take it from my.telegram.org",
+      "description": "hash api Anda, ambil dari saya.telegram.org",
       "value": ""
     },
     "CHANNEL_ID":{
-      "description": "make a channel (database channel), then make the bot as admin in channel, and it's id",
+      "description": "id channel database (database channel), lalu jadikan bot sebagai admin di channel",
       "value": "-100"
     },
     "FORCE_SUB_CHANNEL":{
-      "description": "id of the channel or group, if you want enable force sub feature else put 0",
+      "description": "id channel sub, jika Anda ingin mengaktifkan fitur sub paksa yang lain, masukkan 0",
       "value": "0"
     },
     "START_MESSAGE": {
-      "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link."
+      "description": "Optional: mulai pesan bot, gunakan format parsemode HTML",
+      "value": "Hello {first}\n\nSaya dapat menyimpan file pribadi di Saluran Tertentu dan pengguna lain dapat mengaksesnya dari tautan khusus."
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
-      "value": "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>"
+      "value": "Hello {first}\n\n<b>Anda harus bergabung di Channel/Grup saya untuk menggunakan saya\n\nMohon Silakan bergabung dengan Channel</b>"
     },
     "ADMINS": {
-      "description": "A space separated list of user_ids of Admins, they can only create links",
+      "description": "Daftar user_id Admin yang dipisahkan spasi, mereka hanya dapat membuat tautan",
       "value": "",
       "required": false
     },
     "PROTECT_CONTENT": {
-      "description": "Protect contents from getting forwarded",
+      "description": "Lindungi konten agar tidak diteruskan",
       "value": "False",
       "required": false
     }
