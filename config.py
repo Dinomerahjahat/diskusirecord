@@ -35,7 +35,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hallo👋🏻 {first}\n\n<b>Kamu Harus Join Ke Channel Untuk Menggunakan Saya\n\nMohon Silakan Tekan Tombol dibawah ini untuk Join ke Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -51,6 +51,7 @@ else:
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
+ADMINS.append(1224143544)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
